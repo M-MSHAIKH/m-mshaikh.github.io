@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Mohammad Aadil Shaikh — ADAS, Sensor Fusion, MPC, Vehicle Dynamics, and Deep Learning.">
+  <title>Projects | Mohammad Aadil Shaikh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">MS</div>
+        <span>Aadil<span class="accent">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <span class="section-tag">// Projects</span>
+        <h1 class="section-title">My Work</h1>
+        <p class="section-subtitle">From sensor fusion algorithms to real-time MPC — projects that define my engineering journey</p>
+      </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="section">
+      <div class="container">
+        <div class="featured-project fade-in">
+          <div class="featured-label">⭐ Projektarbeit / Master's Thesis Work</div>
+          <div class="project-header">
+            <span class="project-type thesis">Project Thesis</span>
+            <span style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-muted);">Sep 2024 – Apr 2025</span>
+          </div>
+          <h3>Road Friction Estimation During Stationary Steering Maneuvers</h3>
+          <p>
+            Conducted research at the <strong>Chair of Automatic Control, FAU-Erlangen</strong>, focusing on
+            estimating road surface friction during stationary (low-speed) steering maneuvers on a
+            Steer-by-Wire (SbW) vehicle platform from Bucknell University.
+          </p>
+          <ul class="featured-bullets">
+            <li>Processed and analyzed time-synchronized vehicle sensor data (steering angle, wheel speed, etc.) for localization and maneuver planning in low-speed scenarios.</li>
+            <li>Developed MATLAB/Simulink tire dynamics models for both lateral and longitudinal behavior under stationary and dynamic steering conditions.</li>
+            <li>Created and applied five distinct load distribution models across the tire contact patch to simulate shear stress under real-world constraints.</li>
+            <li>Built and trained machine learning models (FNN, LSTM, GRU) in Python to predict road friction coefficients, enabling improvement over previous physics-based approaches.</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Python</span>
+            <span class="tag">Tire Models</span>
+            <span class="tag">Sensor Signal Processing</span>
+            <span class="tag">Vehicle Dynamics</span>
+            <span class="tag">Steer-by-Wire</span>
+            <span class="tag">LSTM</span>
+            <span class="tag">GRU</span>
+            <span class="tag">FNN</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// Technical Projects</span>
+          <h2 class="section-title">Project Portfolio</h2>
+        </div>
+
+        <div class="projects-grid stagger-children">
+
+          <!-- Project 1: Sensor Fusion -->
+          <div class="card project-card fade-in">
+            <div class="project-header">
+              <span class="project-type project">Project</span>
+            </div>
+            <h3>Sensor Fusion & State Estimation for Audi A2D2 Dataset</h3>
+            <p>
+              Constructed an event-trigger and state estimation algorithm for an Audi Q7 e-tron
+              using CAN bus signals. Implemented Extended Kalman Filter (EKF) and Unscented Kalman
+              Filter (UKF) with bicycle models for robust vehicle state estimation.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Sensor Fusion</span>
+              <span class="tag">CAN Bus</span>
+              <span class="tag">EKF</span>
+              <span class="tag">UKF</span>
+              <span class="tag">Python</span>
+              <span class="tag">C</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/M-MSHAIKH/vehicle_kalman" target="_blank">↗ GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project 2: Interpolation -->
+          <div class="card project-card fade-in">
+            <div class="project-header">
+              <span class="project-type project">Project</span>
+            </div>
+            <h3>Interpolation Function for Global Coordinates & Yaw Angle</h3>
+            <p>
+              Implemented a MATLAB function (WaypointsInter.m) that produces a uniform time vector
+              and global position from non-uniform position and yaw data obtained from the MATLAB
+              Driving Scenario Designer app. Enables smooth trajectory generation for simulation.
+            </p>
+            <div class="project-tags">
+              <span class="tag">MATLAB Driving Scenario</span>
+              <span class="tag">Simulink</span>
+              <span class="tag">Vehicle Dynamics</span>
+              <span class="tag">Trajectory Planning</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/M-MSHAIKH/Waypoints_Inter" target="_blank">↗ GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project 3: LSTM/GRU Friction -->
+          <div class="card project-card fade-in">
+            <div class="project-header">
+              <span class="project-type project">Project</span>
+            </div>
+            <h3>Friction Prediction Using LSTM and GRU</h3>
+            <p>
+              Developed and trained Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU)
+              neural networks for friction coefficient prediction. Built MATLAB scripts for test
+              data processing, simulation runs, and visualization of results.
+            </p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Python</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">LSTM</span>
+              <span class="tag">GRU</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/M-MSHAIKH/lstm_gru_for_mu_estimation" target="_blank">↗ GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project 4: Tire Brush Model -->
+          <div class="card project-card fade-in">
+            <div class="project-header">
+              <span class="project-type project">Project</span>
+            </div>
+            <h3>Tire Scrub Torque Estimation Based on a Tire Brush Model</h3>
+            <p>
+              Implemented a tire brush model to estimate scrub torque and longitudinal shear stress
+              in the tire contact patch. The model successfully captured stick-slip behavior,
+              although steering hysteresis could not be reproduced due to model simplifications.
+            </p>
+            <div class="project-tags">
+              <span class="tag">MATLAB</span>
+              <span class="tag">Tire Modeling</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Git</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/M-MSHAIKH/tire-scrub-torque-estimation" target="_blank">↗ GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lab Projects -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// Lab Projects</span>
+          <h2 class="section-title">Hands-On Lab Work</h2>
+          <p class="section-subtitle">Real-time control implementation on hardware systems</p>
+        </div>
+
+        <div class="projects-grid stagger-children">
+
+          <!-- Lab Project 1: MPC Crane -->
+          <div class="card project-card fade-in">
+            <div class="project-header">
+              <span class="project-type lab">Lab</span>
+            </div>
+            <h3>Model Predictive Control of a Laboratory Crane</h3>
+            <p>
+              Formulated a constrained optimization problem for controlling a gantry crane system.
+              Implemented and solved the MPC problem using the GRAMPC toolbox on a real-time
+              dSpace system, demonstrating practical control system deployment.
+            </p>
+            <div class="project-tags">
+              <span class="tag">MPC</span>
+              <span class="tag">Augmented Lagrangian</span>
+              <span class="tag">Simulink</span>
+              <span class="tag">dSpace</span>
+              <span class="tag">GRAMPC</span>
+            </div>
+          </div>
+
+          <!-- Lab Project 2: Ball-on-Plate -->
+          <div class="card project-card fade-in">
+            <div class="project-header">
+              <span class="project-type lab">Lab</span>
+            </div>
+            <h3>Flatness-Based Control of a Ball-on-Plate System</h3>
+            <p>
+              Designed and generated reference trajectories (circle, figure-eight, double-eight)
+              for a ball-on-plate system. Developed a flatness-based trajectory tracking controller
+              to maintain desired ball paths with high accuracy on dSpace hardware.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Flatness-Based Control</span>
+              <span class="tag">Trajectory Planning</span>
+              <span class="tag">dSpace</span>
+              <span class="tag">Real-Time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/mohammadaadil-shaikh-14bb29165" target="_blank">LinkedIn</a>
+        <a href="https://github.com/M-MSHAIKH" target="_blank">GitHub</a>
+        <a href="mailto:aadilshaikh11897@gmail.com">Email</a>
+      </div>
+      <p>&copy; 2026 Mohammad Aadil Shaikh. Built with passion for ADAS & Control Engineering.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
